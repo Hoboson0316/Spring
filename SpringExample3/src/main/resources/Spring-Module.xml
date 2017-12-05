@@ -1,0 +1,19 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="helloBean" class="com.mkyong.common.HelloWorld">
+		<property name="name" value="Mkyong" />
+	</bean>
+
+	<bean id="mySpring" class="com.mkyong.common.MySpring">
+		<property name="age" value="Hoboson_Dream"></property>
+	</bean>
+	<bean id="dataSource" class="com.mkyong.common.Dbutil">
+		<property name="url" value="jdbc:oracle:thin:@10.10.8.94:1521:nfzcdb"></property>
+		<property name="username" value="SJYY"></property>
+		<property name="password" value="SJYY"></property>
+		<property name="className" value="oracle.jdbc.driver.OracleDriver"></property>
+	</bean>
+</beans>
